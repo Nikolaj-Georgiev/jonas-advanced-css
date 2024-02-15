@@ -1,0 +1,12 @@
+.grid-test {
+  & .row:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.row {
+  max-width: $grid-width;
+  background-color: #eee;
+  margin: 0 auto;
+  margin-bottom: $gutter-vertical;
+}
