@@ -2,6 +2,14 @@
   text-align: center;
 }
 
-.u-margin-bottom-8 {
-  margin-bottom: 8rem;
+.u-margin-bottom-small {
+  margin-bottom: $small;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: $medium;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: $big;
 }
