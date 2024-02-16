@@ -109,7 +109,7 @@ body {
   text-align: center; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.5rem; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
@@ -159,6 +159,25 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
   /* animation-fill-mode: backwards; */ }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #55c57a;
+  padding: 0.3rem;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.2rem); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .row {
   max-width: 114rem;
