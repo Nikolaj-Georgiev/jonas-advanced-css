@@ -24,25 +24,13 @@
       transform: rotateY(180deg);
 
       &-1 {
-        background-image: linear-gradient(
-          to bottom right,
-          $color-secondary-light,
-          $color-secondary-dark
-        );
+        background-image: $color-card-1;
       }
       &-2 {
-        background-image: linear-gradient(
-          to bottom right,
-          $color-primary-light,
-          $color-primary-dark
-        );
+        background-image: $color-card-2;
       }
       &-3 {
-        background-image: linear-gradient(
-          to bottom right,
-          $color-tertiary-light,
-          $color-tertiary-dark
-        );
+        background-image: $color-card-3;
       }
     }
   }
@@ -64,28 +52,13 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient(
-          to bottom right,
-          $color-secondary-light,
-          $color-secondary-dark
-        ),
-        url('../img/nat-5.jpg');
+      background-image: $color-card-1, url('../img/nat-5.jpg');
     }
     &--2 {
-      background-image: linear-gradient(
-          to bottom right,
-          $color-primary-light,
-          $color-primary-dark
-        ),
-        url('../img/nat-6.jpg');
+      background-image: $color-card-2, url('../img/nat-6.jpg');
     }
     &--3 {
-      background-image: linear-gradient(
-          to bottom right,
-          $color-tertiary-light,
-          $color-tertiary-dark
-        ),
-        url('../img/nat-7.jpg');
+      background-image: $color-card-3, url('../img/nat-7.jpg');
     }
   }
 
