@@ -336,7 +336,8 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
-  position: relative; }
+  position: relative;
+  backface-visibility: hidden; }
   .story__shape {
     width: 15rem;
     height: 15rem;

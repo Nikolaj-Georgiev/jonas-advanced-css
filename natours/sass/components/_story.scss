@@ -9,6 +9,7 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
   position: relative;
+  backface-visibility: hidden;
 
   &__shape {
     width: 15rem;
