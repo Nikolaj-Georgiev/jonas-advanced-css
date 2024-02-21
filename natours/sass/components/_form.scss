@@ -6,6 +6,7 @@
   &__input {
     font-size: 1.5rem;
     font-family: inherit;
+    color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     background-color: rgba($color-white, 0.5);
@@ -20,11 +21,27 @@
       border-bottom: 0.3rem solid $color-primary;
     }
 
+    &:focus:invalid {
+      border-bottom: 0.3rem solid $color-secondary-dark;
+    }
+
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
     }
   }
 
   &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
   }
 }
