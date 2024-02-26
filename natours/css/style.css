@@ -427,18 +427,47 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 3000; }
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
   .popup__content {
-    display: inline-block;
+    display: table;
     width: 75%;
-    height: 50rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 0.3rem;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
+  .popup__left {
+    width: 33.33333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.66667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
 
 .story {
   width: 75%;
