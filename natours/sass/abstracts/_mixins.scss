@@ -33,6 +33,8 @@ $breakpoint argument choices:
 - big-desktop
 */
 
+// ORDER: Base + typography > general layout + grid > page layout > components
+
 // 1em == 16px for the media queries. And 16px is the default browser font-size. If user goes for 20px then 1em == 20px etc.
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
