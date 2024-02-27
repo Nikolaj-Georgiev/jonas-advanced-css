@@ -1,17 +1,19 @@
-// .grid-test {
-//   & .row:last-child {
-//     margin-bottom: 0;
-//   }
-// }
-
 .row {
   max-width: $grid-width;
   margin: 0 auto;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
   //selects everything except the last child
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
 
   [class^='col-'] {
     float: left;
@@ -21,6 +23,7 @@
 
       @include respond(tab-port) {
         margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
       }
     }
 
