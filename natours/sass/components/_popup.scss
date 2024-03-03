@@ -15,9 +15,7 @@
   &__content {
     display: table;
     width: 75%;
-    // height: 50rem;
-    // width: 70vw;
-    // height: 70vh;
+
     @include absCenter;
     background-color: $color-white;
     border-radius: 0.3rem;
