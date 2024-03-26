@@ -3,22 +3,62 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 //////////////////////////////////////////
 /// SEARCH
 
 .search {
-  background-color: orangered;
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    border-radius: 20rem;
+    background-color: var(--color-grey-light-2);
+    padding: 0.7rem 2rem;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
   }
 
   &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
