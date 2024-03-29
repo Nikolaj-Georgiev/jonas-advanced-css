@@ -74,8 +74,8 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
+  background-color: #fff;
   flex: 1;
-  background-color: orangered;
   height: 80rem; }
 
 .logo {
@@ -198,3 +198,9 @@ body {
   text-align: center;
   color: var(--color-grey-light-4);
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
