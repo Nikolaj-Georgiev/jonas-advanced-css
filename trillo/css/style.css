@@ -58,7 +58,7 @@ body {
   height: 7rem;
   font-size: 1.4rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -206,8 +206,17 @@ body {
     display: block; }
 
 .overview {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2); }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
   .overview__stars {
+    display: flex;
     margin-right: auto; }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
