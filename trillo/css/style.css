@@ -77,8 +77,7 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  flex: 1;
-  height: 80rem; }
+  flex: 1; }
 
 .detail {
   display: flex;
