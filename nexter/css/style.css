@@ -14,3 +14,9 @@ body {
   color: #6d5d4b;
   font-weight: 300;
   line-height: 1.6; }
+
+.sidebar {
+  background-color: #c69963; }
+
+.header {
+  background-color: #54483a; }
