@@ -2,18 +2,21 @@
   // background-color: $color-grey-light-2;
   grid-column: center-start / center-end;
 
-  margin: 15rem auto;
+  margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows:auto auto;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 6rem;
+  align-items: start;
 }
 
 .feature {
   display: grid;
   grid-template-columns: min-content 1fr;
-  gap: 2rem;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
 
   &__icon {
     fill: $color-primary;
@@ -21,6 +24,7 @@
     height: 4.5rem;
     // grid-row: 1 / -1; this -1 means the end of the EXPLICIT grid lines!!! N.B.
     grid-row: 1 / span 2; // we did not define the rows therefore we have an IMPLICIT grid. That is why we do it with span 2 and not -1
+    transform: translateY(-1rem);
   }
 
   &__text {
