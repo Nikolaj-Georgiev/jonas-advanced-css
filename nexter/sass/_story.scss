@@ -2,6 +2,11 @@
   &__pictures {
     background-color: $color-primary;
     grid-column: full-start / col-end 4;
+    background-image: linear-gradient(
+        rgba($color-primary, 0.5),
+        rgba($color-primary, 0.5)
+      ),
+      url('../img/back.jpg');
 
     display: grid;
     grid-template-rows: repeat(6, 1fr);
@@ -13,12 +18,14 @@
     width: 100%;
     grid-row: 2 / 6;
     grid-column: 2 / span 4;
+    box-shadow: $box-shadow-small;
   }
   &__img--2 {
     width: 115%;
     grid-row: 4 / 6;
     grid-column: 4 / 7;
     z-index: 22;
+    box-shadow: $box-shadow-mid;
   }
 
   &__content {
