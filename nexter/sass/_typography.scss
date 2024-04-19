@@ -8,9 +8,23 @@
 }
 .heading-2 {
   @extend %heading;
+  font-size: 4rem;
+  line-height: 1;
+  font-style: italic;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
 }
 .heading-3 {
   @extend %heading;
+  font-size: 1.6rem;
+  color: $color-primary;
+  text-transform: uppercase;
 }
 .heading-4 {
   @extend %heading;
@@ -23,4 +37,9 @@
   &--dark {
     color: $color-grey-dark-1;
   }
+}
+
+.btn {
+  background-color: $color-primary;
+  border: none;
 }
