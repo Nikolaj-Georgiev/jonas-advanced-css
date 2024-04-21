@@ -9,12 +9,20 @@
   justify-items: center;
   row-gap: 2rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: full-start / full-end;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     row-gap: 5vh;
     column-gap: 2rem;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
   }
 
   &__img {
