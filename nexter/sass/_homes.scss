@@ -10,14 +10,31 @@
 .home {
   background-color: $color-grey-light-1;
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   &__img {
     width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1;
   }
 
   &__like {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    z-index: 2;
+    fill: $color-primary;
+    height: 2.5rem;
+    width: 2.5rem;
+    justify-self: end;
+    margin: 1rem;
   }
 
   &__name {
+    grid-column: 1 / -1;
+
+    font-family: $font-display;
   }
 
   &__location,
@@ -32,5 +49,9 @@
 
     p {
     }
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
   }
 }
